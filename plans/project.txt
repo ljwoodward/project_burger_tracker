@@ -1,0 +1,98 @@
+## Burger Tracker
+
+Jarrod has an insatiable hunger for burgers. However, he only has a limited budget, so prefers to go to places that have a deal on. He would like a way to track which deals are available at which places on a given day so that he can maximise his burger intake for minimum spending.
+
+### MVP:
+
+- Add a burger eatery
+- Add burgers available at an eatery and view them as a list
+- Add a list of deals for an eatery where a deal has
+  - Label string e.g. "Two For One Tuesdays"
+  - A list of burgers that deal applies to
+  - The day that the deal is available on e.g. "Wednesday"
+
+### Possible Extensions:
+
+- Show the deals available by day of the week Mon - Sun
+- Add a price to a burger and add a savings amount/percentage to a deal so it's clear how much Steven is saving
+- Any other ideas you might come up with
+
+
+
+# Presentations
+
+For the presentation, you will have a 10 min slot to show off your work, with 5 minutes for questions.
+
+We expect you to:
+ - show pictures of wireframes or sketches, notes, diagrams from your planning stage. Please include documentation of user needs and journeys if you have these (it helps)
+ - demo your apps functionality
+ - talk about one piece of code that you are particularly proud of
+ - highlight your main learning points
+
+Try not to:
+ - Go over the time limit
+ - Talk through every single line of code
+
+
+
+ # Project Rules
+
+ You are required to submit your link to github as soon as it has been created.
+
+ Students will have a 10-15 minute one-to-one twice during the project:
+  - Monday afternoon as a short review of how things are going
+  - Thursday afternoon - check in to see how things have gone, and for a review of the code.
+ (Note - these sessions are not for getting help at fixing problems)
+
+ You are still expected to come in to CodeClan each day during project week. Stand-ups will take place at 9am every day but will be a bit different. Rather than everyone attending the same stand-up, there will be smaller 'mini' stand-ups made up of people working on the same project brief. At least one instructor will attend each group's stand-up.
+
+ Presentations will be held on Friday.
+
+ The project must be built using only:
+   - Sinatra
+   - PostGRES SQL
+   - HTML / CSS
+   - Ruby
+
+ It must NOT use any technology that has not been taught as part of the CodeClan curriculum.
+
+ The instructional team will be on hand to help but we would strongly encourage you to:
+ - Try and solve the problem yourself by reading the error message
+ - Google specific terms to see if you can find the answer
+ - Ask your peers on the same project as you for advice
+
+ Failing this, we will come to your aid and don't spend more than 30 mins stuck on a problem without asking someone for help.
+
+ We want to see lots of meaningful Git commits and the use of TDD where / if appropriate.
+
+
+
+
+ # Consider the user experience
+
+ ## Before you begin
+
+ Before you begin coding, consider stopping for a minute and think about the user of your product.
+
+ Ask yourself the following questions:
+
+ * What user needs is your product going to answer? Can you document that?
+ * Why would your users want to use this over something similar that they've seen elsewhere?
+ * How could you make sure that your website uses interface solutions that users are familiar with?
+ * What is the user journey — how will users interact with your product, and how many steps will be necessary to complete their goals?
+
+ 1. Use this [user needs template](https://goo.gl/zHbfud) to document things that people may want from your website
+ 2. Download and print out the [template for the user journey](https://goo.gl/zXkgtZ) — use it to map steps of the journey. Remember about user actions and system responses. What's required for every particular screen?
+
+ Make sure to prepare a simple sketch of the website (or a wireframe with UXPin if you wish), sketching out all major steps of the user journey you've identified. Think of potential problems and ways of addressing these in a way that makes the user experience smooth and pleasant.
+
+ ## After you sketch your website out
+
+ Show it to your colleague and ask them how does it come across to them. Don't guide them; give them a goal to complete and listen as they describe their way through your sketches. Can you think of anything that could be improved? If so, sketch quickly and test with the same colleague. See if they think it got any better.
+
+ Only then write your code — don't spend time building something that isn't focused on user needs.
+
+ ### After you're done
+
+ * Show your website to a couple of colleagues. Can they use it? Is there anything that could be quickly changed to make it more user-friendly?
+ * Talk about your experience of planning for the best outcome in your presentation. How did the light touch UX work change the final product? What design decisions did you take after testing it with a friend?
