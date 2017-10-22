@@ -17,5 +17,11 @@ class BurgerDeal
     @id = result[0]['id'].to_i
   end
 
+  def self.delete_all()
+    sql = "DELETE FROM burgerdeals"
+    values = []
+    SqlRunner.run( sql, values )
+  end
+
 
 end

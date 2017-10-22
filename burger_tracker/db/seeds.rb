@@ -6,6 +6,13 @@ require_relative('../models/deal.rb')
 require_relative('../models/burgerdeal.rb')
 require("pry-byebug")
 
+BurgerDeal.delete_all()
+Deal.delete_all()
+Burger.delete_all()
+Visit.delete_all()
+Eatery.delete_all()
+User.delete_all()
+
 user1 = User.new('name' => 'Duncan')
 user1.save()
 
