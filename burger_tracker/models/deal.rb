@@ -9,7 +9,7 @@ class Deal
     @name = options['name']
     @day = options['day']
     @discount = options['discount'].to_i
-    @eatery_id = options['eatery_id']
+    @eatery_id = options['eatery_id'].to_i
   end
 
   def save()

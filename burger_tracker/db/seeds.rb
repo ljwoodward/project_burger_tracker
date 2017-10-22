@@ -3,6 +3,7 @@ require_relative('../models/eatery.rb')
 require_relative('../models/visit.rb')
 require_relative('../models/burger.rb')
 require_relative('../models/deal.rb')
+require_relative('../models/burgerdeal.rb')
 require("pry-byebug")
 
 user1 = User.new('name' => 'Duncan')
@@ -19,6 +20,9 @@ burger1.save
 
 deal1 = Deal.new('name' => 'Big Kahuna Deal', 'day' => 'Tuesday', 'discount' => 2, 'eatery_id' => eatery1.id)
 deal1.save
+
+burgerdeal1 = BurgerDeal.new('eatery_id' => eatery1.id, 'burger_id' => burger1.id)
+burgerdeal1.save
 
 binding.pry
 nil
