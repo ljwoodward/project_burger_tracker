@@ -5,7 +5,7 @@ class User
   attr_reader(:id, :name)
 
   def initialize(options)
-    @id = options['id'].to_i if options['id']
+    @id = options['id'].to_i
     @name = options['name']
   end
 
@@ -20,6 +20,13 @@ class User
     sql = "DELETE FROM users"
     values = []
     SqlRunner.run( sql, values )
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM users WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values)
+    return User.new(result.first)
   end
 
 

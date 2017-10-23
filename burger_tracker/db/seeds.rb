@@ -13,7 +13,7 @@ Visit.delete_all()
 Eatery.delete_all()
 User.delete_all()
 
-user1 = User.new('name' => 'Duncan')
+user1 = User.new('name' => 'Jarrod')
 user1.save()
 
 eatery1 = Eatery.new('name' => 'Big Kahuna Burger', 'url' => 'www.bigkahunaburger.com')

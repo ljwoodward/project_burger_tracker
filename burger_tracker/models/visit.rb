@@ -23,5 +23,12 @@ class Visit
     SqlRunner.run( sql, values )
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM visits WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values)
+    return Visit.new(result.first)
+  end
+
 
 end

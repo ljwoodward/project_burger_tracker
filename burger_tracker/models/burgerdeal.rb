@@ -23,5 +23,12 @@ class BurgerDeal
     SqlRunner.run( sql, values )
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM burgerdeals WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values)
+    return BurgerDeal.new(result.first)
+  end
+
 
 end
