@@ -46,5 +46,6 @@ class Deal
     SqlRunner.run(sql, values)
   end
 
+  
 
 end
