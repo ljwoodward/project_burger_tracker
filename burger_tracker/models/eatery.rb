@@ -30,5 +30,12 @@ class Eatery
     return Eatery.new(result.first)
   end
 
+  def self.all()
+    sql = "SELECT * FROM eateries"
+    values = []
+    results = SqlRunner.run( sql, values )
+    return results.map { |eatery| Eatery.new( eatery ) }
+  end
+
 
 end

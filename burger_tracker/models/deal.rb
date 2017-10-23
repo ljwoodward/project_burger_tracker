@@ -32,5 +32,12 @@ class Deal
     return Deal.new(result.first)
   end
 
+  def self.all()
+    sql = "SELECT * FROM deals"
+    values = []
+    results = SqlRunner.run( sql, values )
+    return results.map { |deal| Deal.new( deal ) }
+  end
+
 
 end

@@ -29,5 +29,12 @@ class User
     return User.new(result.first)
   end
 
+  def self.all()
+    sql = "SELECT * FROM users"
+    values = []
+    results = SqlRunner.run( sql, values )
+    return results.map { |user| User.new( user ) }
+  end
+
 
 end

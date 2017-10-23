@@ -30,5 +30,12 @@ class BurgerDeal
     return BurgerDeal.new(result.first)
   end
 
+  def self.all()
+    sql = "SELECT * FROM burgerdeals"
+    values = []
+    results = SqlRunner.run( sql, values )
+    return results.map { |burgerdeal| BurgerDeal.new( burgerdeal ) }
+  end
+
 
 end

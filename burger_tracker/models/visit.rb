@@ -30,5 +30,12 @@ class Visit
     return Visit.new(result.first)
   end
 
+  def self.all()
+    sql = "SELECT * FROM visits"
+    values = []
+    results = SqlRunner.run( sql, values )
+    return results.map { |visit| Visit.new( visit ) }
+  end
+
 
 end
