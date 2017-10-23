@@ -1,5 +1,11 @@
 <% @burgers.each do |burger| %>
  <p>Name: <%= burger.name() %></p>
- <p>price: <%= burger.price() %> </p>
- <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br> 
+ <p>Price: <%= burger.price() %> </p>
+ <p>Deals: <% @deal = burger.deals %> </p>
+ <% @deal.each do |deal| %>
+ <p> <%= deal.name %> </p>
+ <p> <%= deal.day %> </p>
+ <p> <%= deal.discount %> </p>
+ <% end %>
+ <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br>
 <% end %>

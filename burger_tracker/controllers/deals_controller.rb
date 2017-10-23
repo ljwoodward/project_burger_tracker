@@ -9,5 +9,6 @@ end
 
 get '/deals/:id' do
   @deal = Deal.find(params[:id].to_i)
+  @burgers = @deal.burgers
   erb(:"deals/show")
 end
