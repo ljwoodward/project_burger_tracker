@@ -11,27 +11,27 @@ class BurgerDeal
   end
 
   def save()
-    sql = "INSERT INTO burgerdeals (eatery_id, burger_id) VALUES ($1, $2) RETURNING id"
+    sql = "INSERT INTO burgers_deals (eatery_id, burger_id) VALUES ($1, $2) RETURNING id"
     values = [@eatery_id, @burger_id]
     result = SqlRunner.run(sql, values)
     @id = result[0]['id'].to_i
   end
 
   def self.delete_all()
-    sql = "DELETE FROM burgerdeals"
+    sql = "DELETE FROM burgers_deals"
     values = []
     SqlRunner.run( sql, values )
   end
 
   def self.find(id)
-    sql = "SELECT * FROM burgerdeals WHERE id = $1"
+    sql = "SELECT * FROM burgers_deals WHERE id = $1"
     values = [id]
     result = SqlRunner.run(sql, values)
     return BurgerDeal.new(result.first)
   end
 
   def self.all()
-    sql = "SELECT * FROM burgerdeals"
+    sql = "SELECT * FROM burgers_deals"
     values = []
     results = SqlRunner.run( sql, values )
     return results.map { |burgerdeal| BurgerDeal.new( burgerdeal ) }
