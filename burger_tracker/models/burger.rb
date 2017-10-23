@@ -2,7 +2,8 @@ require_relative('../db/sql_runner.rb')
 
 class Burger
 
-  attr_reader(:id, :name, :price, :eatery_id)
+  attr_reader(:id, :eatery_id)
+  attr_accessor(:name, :price)
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
@@ -36,6 +37,12 @@ class Burger
     values = []
     results = SqlRunner.run( sql, values )
     return results.map { |burger| Burger.new( burger ) }
+  end
+
+  def update()
+    sql = "UPDATE burgers SET (name, price, eatery_id) = ($1, $2, $3) WHERE id = $4"
+    values = [@name, @price, @eatery_id, @id]
+    SqlRunner.run(sql, values)
   end
 
 

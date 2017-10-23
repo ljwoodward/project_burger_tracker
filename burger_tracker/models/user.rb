@@ -2,7 +2,8 @@ require_relative('../db/sql_runner.rb')
 
 class User
 
-  attr_reader(:id, :name)
+  attr_reader(:id)
+  attr_accessor(:name)
 
   def initialize(options)
     @id = options['id'].to_i
@@ -34,6 +35,12 @@ class User
     values = []
     results = SqlRunner.run( sql, values )
     return results.map { |user| User.new( user ) }
+  end
+
+  def update()
+    sql = "UPDATE burgers SET (name) = ($1) WHERE id = $2"
+    values = [@name, @id]
+    SqlRunner.run(sql, values)
   end
 
 
