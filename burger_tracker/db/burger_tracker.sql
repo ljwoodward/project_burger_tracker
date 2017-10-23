@@ -40,6 +40,6 @@ CREATE TABLE deals (
 
 CREATE TABLE burgers_deals (
   id SERIAL8 primary key,
-  eatery_id INT8 REFERENCES deals(id),
-  burger_id INT8 REFERENCES burgers(id)
+  burger_id INT8 REFERENCES burgers(id),
+  deal_id INT8 REFERENCES deals(id)
 );

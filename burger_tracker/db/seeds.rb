@@ -40,10 +40,12 @@ deal1.save
 deal2 = Deal.new('name' => 'BMB Wednesday Madness', 'day' => 'Wednesday', 'discount' => 2, 'eatery_id' => eatery2.id)
 deal2.save
 
-burgerdeal1 = BurgerDeal.new('eatery_id' => eatery1.id, 'burger_id' => burger1.id)
+burgerdeal1 = BurgerDeal.new('deal_id' => deal1.id, 'burger_id' => burger1.id)
 burgerdeal1.save
-burgerdeal2 = BurgerDeal.new('eatery_id' => eatery2.id, 'burger_id' => burger2.id)
+burgerdeal2 = BurgerDeal.new('deal_id' => deal2.id, 'burger_id' => burger2.id)
 burgerdeal2.save
+burgerdeal3 = BurgerDeal.new('deal_id' => deal1.id, 'burger_id' => burger3.id)
+burgerdeal3.save
 
 binding.pry
 nil

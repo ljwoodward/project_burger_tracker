@@ -46,6 +46,15 @@ class Deal
     SqlRunner.run(sql, values)
   end
 
-  
+  def eatery()
+    sql = "SELECT * FROM eateries WHERE id = $1"
+    values = [@eatery_id]
+    results = SqlRunner.run(sql, values)
+    eatery_data = results[0]
+    eatery = Eatery.new(eatery_data)
+    return eatery
+  end
+
+
 
 end
