@@ -1,2 +1,6 @@
 <p>Name: <%= @eatery.name() %></p>
 <p>Website: <%= @eatery.url() %> </p>
+<p>Burgers: <% @burgers.each do |burger| %>
+ <p>Name: <%= burger.name() %></p>
+ <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br>
+<% end %></p>
