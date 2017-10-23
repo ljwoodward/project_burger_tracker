@@ -1,0 +1,5 @@
+<% @eateries.each do |eatery| %>
+ <p>Name: <%= eatery.name() %></p>
+ <p>Website: <%= eatery.url() %> </p>
+ <p><a href="/eateries/<%=eatery.id%>">Show Eatery</a></p><br> 
+<% end %>
