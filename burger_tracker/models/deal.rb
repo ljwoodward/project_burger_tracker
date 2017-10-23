@@ -55,6 +55,18 @@ class Deal
     return eatery
   end
 
+  def burgers()
+    sql = "SELECT burgers.*
+    FROM burgers
+    INNER JOIN burgers_deals
+    ON burgers_deals.burger_id = burgers.id
+    WHERE deal_id = $1"
+    values = [@id]
+    burgers = SqlRunner.run(sql, values)
+    result = burgers.map { |burger| Burger.new( burger ) }
+    return result
+  end
+
 
 
 end
