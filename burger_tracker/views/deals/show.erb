@@ -1,7 +1,8 @@
 <p>Name: <%= @deal.name() %></p>
 <p>Day: <%= @deal.day() %> </p>
-<p>Discount: £<%= @deal.discount() %> </p>
+<p>Discount: %<%= @deal.discount() %> </p>
 <p>Burgers: <% @burgers.each do |burger| %>
  <p>Name: <%= burger.name() %></p>
+ <p>Discounted Price: £<%= burger.discount(@deal) %></p>
  <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br>
 <% end %></p>

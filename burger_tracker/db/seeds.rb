@@ -35,9 +35,9 @@ burger2.save
 burger3 = Burger.new('name' => 'Big Badass Burger', 'price' => 12.99, 'eatery_id' => eatery1.id)
 burger3.save
 
-deal1 = Deal.new('name' => 'Big Kahuna Deal', 'day' => 'Tuesday', 'discount' => 2, 'eatery_id' => eatery1.id)
+deal1 = Deal.new('name' => 'Big Kahuna Deal', 'day' => 'Tuesday', 'discount' => 20, 'eatery_id' => eatery1.id)
 deal1.save
-deal2 = Deal.new('name' => 'BMB Wednesday Madness', 'day' => 'Wednesday', 'discount' => 2, 'eatery_id' => eatery2.id)
+deal2 = Deal.new('name' => 'BMB Wednesday Madness', 'day' => 'Wednesday', 'discount' => 25, 'eatery_id' => eatery2.id)
 deal2.save
 
 burgerdeal1 = BurgerDeal.new('deal_id' => deal1.id, 'burger_id' => burger1.id)

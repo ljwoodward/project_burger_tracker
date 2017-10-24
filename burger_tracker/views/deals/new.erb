@@ -6,7 +6,7 @@
   <input type="text" required name="day" id="day-field"/><br></br>
 
   <label for="discount-field">Discount (%):</label>
-  <input type="number" required name="price" id="price-field"/><br></br>
+  <input type="number" required name="discount" id="discount-field"/><br></br>
 
   <label for="eatery-selection">Select Eatery:</label>
   <select name="eatery_id" id="eatery-selection"><br></br>
@@ -14,7 +14,8 @@
     <% @eateries.each do |eatery| %>
      <option value=<%=eatery.id%>><%=eatery.name%></option>
      <%end%><br></br>
-  </select>
+  </select><br></br>
+
 
   <input type="submit" value="Add Deal"/>
 
