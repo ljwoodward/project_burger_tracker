@@ -17,7 +17,14 @@ get '/burgers_deals/new' do
 end
 
 post '/burgers_deals' do
-  @burger = Burger.new(params)
-  @burger.save()
+  params["burger_id"].each do |item|
+
+    options = {}
+    options["deal_id"] = params["deal_id"]
+    options["burger_id"] = item
+
+    @burgerdeals = BurgerDeal.new(options)
+    @burgerdeals.save()
+  end
   redirect to '/burgers_deals'
 end

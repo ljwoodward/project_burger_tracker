@@ -1,10 +1,19 @@
-<form>
+<form method="post" action="/burgers_deals">
+
+  <label for="deal-selection">Select Deal:</label>
+  <select name="deal_id" id="deal-selection"><br></br>
+    <% @deals.each do |deal| %>
+     <option value=<%=deal.id%>><%=deal.name%></option>
+     <%end%><br></br>
+  </select>
+
 <label>Add affected burgers:</label><br></br>
 <% @burgers.each do |burger| %>
 <label for="burger-selection"><%=burger.name%></label>
-
-<input type="checkbox" id="burger-selection" value=<%burger.id%>/><br></br>
-  <% BurgerDeal.new('deal_id' => deal.id, 'burger_id' => burger.id)
+<input type="checkbox" name="burger_id[]" id="burger-selection" value=<%=burger.id%>><br></br>
   <% end %>
+
+<input type="submit" value="Add Deal"/>
+
 
   </form>

@@ -18,7 +18,7 @@ end
 post '/deals' do
   @deal = Deal.new(params)
   @deal.save()
-  redirect to '/burgers_deals/new'
+  redirect to '/deals'
 end
 
 get '/deals/:id' do

@@ -7,3 +7,6 @@ things to do.
   - Edit things
 
   - Get things added to burgers_deals
+
+
+  <!-- <% BurgerDeal.new('deal_id' => deal.id, 'burger_id' => burger.id)%> -->
