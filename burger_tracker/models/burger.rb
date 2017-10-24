@@ -68,5 +68,12 @@ class Burger
   	return result
   end
 
+  def discount(deal)
+    percent = (deal.discount/100.00).to_f
+    discount = @price * percent
+    discount_price = @price - discount
+    return discount_price.round(2)
+  end
+
 
 end
