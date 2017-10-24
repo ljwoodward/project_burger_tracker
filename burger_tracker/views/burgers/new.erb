@@ -1,0 +1,18 @@
+<form method="post" action="/burgers">
+  <label for="name-field">Name:</label>
+  <input type="text" required name="name" id="name-field"/><br></br>
+
+  <label for="price-field">Price:</label>
+  <input type="number" required name="price" id="price-field" step=".01"/><br></br>
+
+  <label for="eatery-selection">Select Eatery:</label>
+  <select name="eatery_id" id="eatery-selection"><br></br>
+
+    <% @eateries.each do |eatery| %>
+     <option value=<%=eatery.id%>><%=eatery.name%></option>
+     <%end%><br></br>
+  </select>
+
+  <input type="submit" value="Add Burger"/>
+
+</form>

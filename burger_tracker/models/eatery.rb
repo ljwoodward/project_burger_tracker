@@ -1,4 +1,6 @@
 require_relative('../db/sql_runner.rb')
+require_relative('burger.rb')
+require_relative('deal.rb')
 
 class Eatery
 
