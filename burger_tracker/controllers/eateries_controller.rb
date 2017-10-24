@@ -9,6 +9,18 @@ get '/eateries' do
   erb (:"eateries/index")
 end
 
+get '/eateries/new' do
+  @deals = Deal.all
+  @burgers = Burger.all
+  erb(:"eateries/new")
+end
+
+post '/eateries' do
+  @eatery = Eatery.new(params)
+  @eatery.save()
+  redirect to '/eateries'
+end
+
 get '/eateries/:id' do
   @eatery = Eatery.find(params[:id].to_i)
   @burgers = @eatery.burgers
