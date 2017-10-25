@@ -8,6 +8,12 @@ body {
   margin: 0px;*/
 }
 
+.admin {
+  background: black url('/images/image2.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
