@@ -2,6 +2,7 @@ body {
   background: black url('/images/image1.jpeg');
   background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #FCE999;
   font-family: 'Arvo', sans-serif;
   padding: 0px;
@@ -9,6 +10,19 @@ body {
 }
 
 .admin {
+  background: black url('/images/admin_image.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.burgers {
+  background: black url('/images/image4.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.deals {
   background: black url('/images/image2.jpeg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -27,20 +41,8 @@ li {
     float: left;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Arvo', sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -55,44 +57,27 @@ a, a:visited {
   text-decoration: none;
 }
 
+.eateries {
+  background: black url('/images/image3.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+
 p {
   color: 	#701C02;
   font-size: 24px;
 }
 
-
-/*h1, h2, h3, h4, h5, h6 {
-  font-family: 'Special Elite', cursive;
-  margin: 0px;
-  padding: 0px;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav ul li {
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  list-style-type: decimal-leading-zero;
+li a:hover {
+    background-color: #111;
 }
-
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-
-main {
-  padding: 25px;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex--row {
-  flex-direction: row;
-}
-
-#content {
-  border-left: 1px solid darkred;
-  padding-left: 25px;
-}
-*/
