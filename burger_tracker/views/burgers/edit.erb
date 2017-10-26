@@ -1,3 +1,4 @@
+<body class="burgers">
 <form method="post" action="/burgers/<%= @burger.id %>">
   <label for="name-field">Name:</label>
   <input type="text" required name="name" id="name-field" value="<%= @burger.name %>"/><br></br>
@@ -16,3 +17,4 @@
   <input type="submit" value="Update Burger"/>
 
 </form>
+</body>

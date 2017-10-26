@@ -1,4 +1,5 @@
-<form method="post" action="/eateries/<%= @eatery.id %>">
+<body class="eateries">
+  <form method="post" action="/eateries/<%= @eatery.id %>">
   <label for="name-field">Name:</label>
   <input type="text" required name="name" id="name-field" value="<%= @eatery.name %>"/><br></br>
 
@@ -8,3 +9,4 @@
   <input type="submit" value="Update Eatery"/>
 
 </form>
+</body>

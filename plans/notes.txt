@@ -9,3 +9,42 @@ things to do.
 
 
   <!-- <% BurgerDeal.new('deal_id' => deal.id, 'burger_id' => burger.id)%> -->
+
+
+
+- Thursday
+
+- Home
+  - Font colour Title
+  - Font colour tagline
+- Eateries
+  - get <a> working
+  - <a> colouring
+  - position of show link
+- Burgers
+  - the list looks terrible - flexbox?
+  - "20 percent off"
+- Deals
+  - Improve look of list as above
+- Admin
+  - Add edit links
+- Eateries/new
+  - Add admin nav bar
+  - Make form look better
+- Burgers/new
+  - Form
+- Deals/new
+  - Form
+- Burgerdeals/new
+  - checkbox grouping
+- x/edit
+  - form
+  - deals
+
+1. Deals update routes.
+2. Burgerdeals update routes.
+3. Forms.
+4. Links within site.
+5. External links.
+6. Admin nav bar.
+7. Styling.
