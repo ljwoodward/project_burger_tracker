@@ -1,17 +1,47 @@
 <body class="burgers">
-  <ul class="burgers">
-<% @burgers.each do |burger| %>
- <li>Name: <%= burger.name() %></li>
- <li>Price: <%= burger.price() %> </li>
- <li>Deals: <% @deal = burger.deals %> </li>
- <% @deal.each do |deal| %>
- <ul class="burgers">
- <li> <%= deal.name %> </li>
- <li> <%= deal.day %> </li>
- <li> <%= deal.discount %> percent discount </li>
- <ul>
- <% end %>
- <li><a href="/burgers/<%=burger.id%>">Show Burger</a></li><br>
-<% end %>
-</ul>
-</body>
+<div class="burger-container"
+<ul>
+  <div class="row">
+    <% @burgers.each do |burger| %>
+    <div class="col-4">
+      <div class="burgerdiv">
+        <li>Name: <%= burger.name() %></li>
+        <li>Price: <%= burger.price() %> </li>
+        <li>Deals:</li> <% @deal = burger.deals %>
+        <% @deal.each do |deal| %>
+        <ul>
+
+          <li> <%= deal.name %> </li>
+          <li> <%= deal.day %> </li>
+          <li> <%= deal.discount %> percent discount </li>
+          <ul>
+
+            <li><a class="burger" href="/burgers/<%=burger.id%>">Show Burger</a></li><br>
+          </div>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+  <div>
+  <figure>
+    <img src="" alt="">
+    <ul>
+
+    </ul>
+  </figure>
+  <figure>
+    <img src="" alt="">
+    <ul>
+
+    </ul>
+  </figure>
+  <figure>
+    <img src="" alt="">
+    <ul>
+
+    </ul>
+  </figure>
+</div>
+<body>

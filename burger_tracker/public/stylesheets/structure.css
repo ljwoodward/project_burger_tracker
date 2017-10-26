@@ -107,6 +107,60 @@ body.burgers {
   background-attachment: fixed;
 }
 
-ul.burgers {
+.burger-container {
+  max-width: 970px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.row {
+  display: wrap;
+  width: 100%;
+}
+
+.col-4 {
+  flex: 0 0 33.33%;
+  padding: 10px;
+}
+
+.burger{
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+div.burgerdiv {
+  background: black;
+  opacity: 0.7;
+}
+
+a.burger {
   background: none;
+}
+
+.deals-container {
+  max-width: 970px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.row {
+  display: wrap;
+  width: 100%;
+}
+
+.col-4 {
+  flex: 0 0 33.33%;
+  padding: 10px;
+}
+
+.dealbox{
+  background: black;
+  opacity: 0.7;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+td {
+  border-right: 1px solid black;
+  padding: 0 10px 0 10px;
 }

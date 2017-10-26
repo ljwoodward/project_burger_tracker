@@ -18,7 +18,7 @@ user1.save()
 user2 = User.new('name' => 'Ubercorn')
 user2.save()
 
-eatery1 = Eatery.new('name' => 'Big Kahuna Burger', 'url' => 'http://www.bigkahunaburger.com')
+eatery1 = Eatery.new('name' => 'Byron', 'url' => 'http://www.byronhamburgers.com')
 eatery1.save()
 eatery2 = Eatery.new('name' => 'Bread Meats Bread', 'url' => 'http://www.breadmeatsbread.com')
 eatery2.save()
@@ -28,11 +28,11 @@ visit1.save
 visit2 = Visit.new('user_id' => user2.id, 'eatery_id' => eatery2.id)
 visit2.save
 
-burger1 = Burger.new('name' => 'Big Kahuna Special', 'price' => 9.99, 'eatery_id' => eatery1.id)
+burger1 = Burger.new('name' => 'Byron Burger', 'price' => 9.99, 'eatery_id' => eatery1.id)
 burger1.save
 burger2 = Burger.new('name' => 'Full House Burger', 'price' => 9.00, 'eatery_id' => eatery2.id)
 burger2.save
-burger3 = Burger.new('name' => 'Big Badass Burger', 'price' => 12.99, 'eatery_id' => eatery1.id)
+burger3 = Burger.new('name' => 'B-Rex', 'price' => 12.99, 'eatery_id' => eatery1.id)
 burger3.save
 
 deal1 = Deal.new('name' => 'Big Kahuna Deal', 'day' => 'Tuesday', 'discount' => 20, 'eatery_id' => eatery1.id)
@@ -44,8 +44,6 @@ burgerdeal1 = BurgerDeal.new('deal_id' => deal1.id, 'burger_id' => burger1.id)
 burgerdeal1.save
 burgerdeal2 = BurgerDeal.new('deal_id' => deal2.id, 'burger_id' => burger2.id)
 burgerdeal2.save
-burgerdeal3 = BurgerDeal.new('deal_id' => deal1.id, 'burger_id' => burger3.id)
-burgerdeal3.save
 
 binding.pry
 nil
