@@ -18,9 +18,9 @@ user1.save()
 user2 = User.new('name' => 'Ubercorn')
 user2.save()
 
-eatery1 = Eatery.new('name' => 'Big Kahuna Burger', 'url' => 'www.bigkahunaburger.com')
+eatery1 = Eatery.new('name' => 'Big Kahuna Burger', 'url' => 'http://www.bigkahunaburger.com')
 eatery1.save()
-eatery2 = Eatery.new('name' => 'Bread Meats Bread', 'url' => 'www.breadmeatsbread.com')
+eatery2 = Eatery.new('name' => 'Bread Meats Bread', 'url' => 'http://www.breadmeatsbread.com')
 eatery2.save()
 
 visit1 = Visit.new('user_id' => user1.id, 'eatery_id' => eatery1.id)

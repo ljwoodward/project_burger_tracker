@@ -1,6 +1,7 @@
 <section class="burgerdeals">
 <% @burgerdeals.each do |burgerdeal| %>
- <p>Deal: <%= burgerdeal.deal_id() %></p>
+ <p>Deal: <%= burgerdeal.name() %></p>
  <p>Burger: <%= burgerdeal.burger_id() %> </p>
+ <p><a href="/burgers_deals/<%=burgerdeal.id%>">Show Deal</a></p><br>
 <% end %>
 </section>
