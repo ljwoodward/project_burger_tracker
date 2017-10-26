@@ -1,10 +1,9 @@
 things to do.
   - Diagrams
-    - User journey
     - Proto-persona
-  - Add burgers to deal
-    - Check boxes
-  - Edit things
+  - Edit things - links
+  - Make it all look better
+
 
   - Get things added to burgers_deals
 

@@ -1,4 +1,4 @@
-/*body form{
+body form{
   background-image: '/images/admin_image.jpg';
   background-size: 100%;
   background-repeat: no-repeat;
@@ -52,4 +52,4 @@ select {
 :focus {
   outline-color: transparent;
   outline-style: none;
-}*/
+}

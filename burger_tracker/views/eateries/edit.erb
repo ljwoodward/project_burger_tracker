@@ -1,0 +1,10 @@
+<form method="post" action="/eateries/<%= @eatery.id %>">
+  <label for="name-field">Name:</label>
+  <input type="text" required name="name" id="name-field" value="<%= @eatery.name %>"/><br></br>
+
+  <label for="url-field">Url:</label>
+  <input type="text"  name="url" id="url-field" value="<%= @eatery.url %>"/><br></br>
+
+  <input type="submit" value="Update Eatery"/>
+
+</form>

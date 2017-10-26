@@ -26,3 +26,13 @@ get '/eateries/:id' do
   @burgers = @eatery.burgers
   erb(:"eateries/show")
 end
+
+get '/eateries/:id/edit' do
+  @eatery = Eatery.find(params[:id].to_i)
+  erb(:"eateries/edit")
+end
+
+post '/eaterys/:id' do
+  Eatery.new(params).update
+  redirect to '/eateries'
+end
