@@ -1,4 +1,4 @@
-<body class="burgers">
+<section class="burgers">
 <% @burgers.each do |burger| %>
  <p>Name: <%= burger.name() %></p>
  <p>Price: <%= burger.price() %> </p>
@@ -10,4 +10,4 @@
  <% end %>
  <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br>
 <% end %>
-</body>
+</section>

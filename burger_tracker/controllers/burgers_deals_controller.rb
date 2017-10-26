@@ -28,3 +28,15 @@ post '/burgers_deals' do
   end
   redirect to '/burgers_deals'
 end
+
+get 'burgers_deals/:id' do
+  @burgerdeal = BurgerDeal.find(params[:id].to_i)
+  erb (:"burgers_deals/show")
+end
+
+# get '/burgers_deals/:id/edit' do
+#   @burgerdeal = BurgerDeal.find(params[:id].to_i)
+#   @burgers = Burger.all
+#   @deals = Deal.all
+#   erb(:"burgers_deals/edit")
+# end

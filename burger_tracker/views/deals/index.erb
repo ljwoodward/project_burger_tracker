@@ -1,8 +1,8 @@
-<body class="deals">
+<section class="deals">
 <% @deals.each do |deal| %>
  <p>Name: <%= deal.name() %></p>
  <p>Day: <%= deal.day() %> </p>
  <p>Discount: %<%= deal.discount() %> </p>
  <p><a href="/deals/<%=deal.id%>">Show Deal</a></p><br>
 <% end %>
-</body>
+</section>

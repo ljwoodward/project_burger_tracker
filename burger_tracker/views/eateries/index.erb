@@ -1,4 +1,4 @@
-<body class="eateries">
+<section class="eateries">
   <table>
   <tr>
     <th><h2>Name</h2></th>
@@ -9,11 +9,11 @@
   <tr>
     <td><%= eatery.name %></td>
     <td>|</td>
-    <td><a href"<% eatery.url %>"><%= eatery.url %></a></td>
+    <td><a href"http://<%= eatery.url %>"></a><%=eatery.url%></td>
     <td><a href="/eateries/<%=eatery.id%>">Show Eatery</a></td><br>
 </td>
   </tr>
 
   <% end %>
 </table>
-</body>
+</section>
