@@ -1,4 +1,25 @@
 <body class="deals">
+  <form method="post" action="/deals/<%= @deal.id %>">
+    <label for="name-field" >Name:</label>
+    <input type="text" required name="name" id="name-field" value="<%= @deal.name %>"/><br></br>
 
-  
+    <label for="day-field">Day:</label>
+    <input type="text" required name="day" id="day-field" value="<%= @deal.day %>"/><br></br>
+
+    <label for="discount-field">Discount (%):</label>
+    <input type="number" required name="discount" id="discount-field" value="<%= @deal.discount %>"/><br></br>
+
+    <label for="eatery-selection">Select Eatery:</label>
+    <select name="eatery_id" id="eatery-selection"><br></br>
+
+      <% @eateries.each do |eatery| %>
+       <option value=<%=eatery.id%>><%=eatery.name%></option>
+       <%end%><br></br>
+    </select><br></br>
+
+
+    <input type="submit" value="Update Deal"/>
+
+  </form>
+
 </body>

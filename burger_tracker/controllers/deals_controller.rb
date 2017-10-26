@@ -26,3 +26,14 @@ get '/deals/:id' do
   @burgers = @deal.burgers
   erb(:"deals/show")
 end
+
+get '/deals/:id/edit' do
+  @deal = Deal.find(params[:id].to_i)
+  @eateries = Eatery.all
+  erb(:"deals/edit")
+end
+
+post '/deals/:id' do
+  Deal.new(params).update
+  redirect to '/deals'
+end
