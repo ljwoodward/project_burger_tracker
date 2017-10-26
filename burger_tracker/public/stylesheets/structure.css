@@ -1,5 +1,5 @@
 body {
-  background: black url('/images/image1.jpeg');
+  background: black url('/images/image1.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,7 +23,7 @@ body {
 
 
 .deals {
-  background: black url('/images/image2.jpeg');
+  background: black url('/images/image2.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -53,7 +53,7 @@ h1 {
 }
 
 a, a:visited {
-  color: #FCE999;
+  color: #CCB00E;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ a, a:visited {
 
 
 p {
-  color: 	#701C02;
+  color: crimson;
   font-size: 24px;
 }
 
@@ -80,4 +80,33 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+
+h1.main {
+  color: 	#CCB00E;
+}
+
+a.eateries, a:visited.eateries {
+  color: blue;
+  text-decoration: none;
+  background: none;
+}
+
+section.eateries {
+  background: none;
+}
+
+section.burgers {
+  background: none;
+}
+
+body.burgers {
+  background: black url('/images/image4.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ul.burgers {
+  background: none;
 }

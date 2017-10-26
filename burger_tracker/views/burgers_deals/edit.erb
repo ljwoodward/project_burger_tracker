@@ -1,4 +1,21 @@
 <section class="burgerdeals">
+  <form method="post" action="/burgers_deals/<%= @burgerdeal.id">
 
+    <label for="deal-selection"><h2>Select Deal:</h2></label>
+    <select name="deal_id" id="deal-selection" val><br></br>
+      <% @deals.each do |deal| %>
+       <option value=<%=deal.id%>><%=deal.name%></option>
+       <%end%><br></br>
+    </select>
+  <br></br>
+  <label><h2>Add affected burgers:</h2></label><br></br>
+  <% @burgers.each do |burger| %>
+  <label for="burger-selection"><%=burger.name%></label>
+  <input type="checkbox" name="burger_id[]" id="burger-selection" value=<%=burger.id%>><br></br>
+    <% end %>
+
+  <input type="submit" value="Add Deal"/>
+
+    </form>
 
 </section>

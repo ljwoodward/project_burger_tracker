@@ -1,13 +1,17 @@
-<section class="burgers">
+<body class="burgers">
+  <ul class="burgers">
 <% @burgers.each do |burger| %>
- <p>Name: <%= burger.name() %></p>
- <p>Price: <%= burger.price() %> </p>
- <p>Deals: <% @deal = burger.deals %> </p>
+ <li>Name: <%= burger.name() %></li>
+ <li>Price: <%= burger.price() %> </li>
+ <li>Deals: <% @deal = burger.deals %> </li>
  <% @deal.each do |deal| %>
- <p> <%= deal.name %> </p>
- <p> <%= deal.day %> </p>
- <p> <%= deal.discount %> </p>
+ <ul class="burgers">
+ <li> <%= deal.name %> </li>
+ <li> <%= deal.day %> </li>
+ <li> <%= deal.discount %> percent discount </li>
+ <ul>
  <% end %>
- <p><a href="/burgers/<%=burger.id%>">Show Burger</a></p><br>
+ <li><a href="/burgers/<%=burger.id%>">Show Burger</a></li><br>
 <% end %>
-</section>
+</ul>
+</body>
